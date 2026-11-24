@@ -1,0 +1,206 @@
+/* CONFIGURACIÓN GENERAL */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff0f2;
+    color: #59434b;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #f5365b;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 3px 8px #e8b8c0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+header p {
+    font-size: 13px;
+    opacity: 0.95;
+}
+
+nav {
+    margin-top: 14px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* BLOQUES / SECCIONES */
+section,
+.bloque-sabores {
+    background-color: #ffffff;
+    margin-top: 14px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #eadde0;
+}
+
+.presentacion,
+.datos,
+.mensaje,
+.promocion,
+.disponibilidad {
+    font-size: 14px;
+}
+
+.presentacion h2,
+.datos h2,
+.mensaje h2,
+.titulo,
+.promocion h2,
+.disponibilidad h2 {
+    color: #f5365b;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.datos p,
+.presentacion p,
+.mensaje p,
+.promocion p,
+.disponibilidad p {
+    margin: 6px 0;
+}
+
+/* TÍTULO DE SABORES */
+.titulo {
+    border-bottom: 1px solid #f7cbd3;
+    padding-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 13px;
+    color: #7a626b;
+    margin-bottom: 16px;
+}
+
+/* TARJETAS DE HELADOS EN FILA */
+.contenedor-helados {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 8px 0;
+}
+
+.helado {
+    background-color: #ffffff;
+    width: 180px;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #f8d6dd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #eee;
+    transition: transform 0.2s ease;
+}
+
+.helado:hover {
+    transform: translateY(-4px);
+}
+
+.helado img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.helado h3 {
+    color: #59434b;
+    font-size: 15px;
+    margin: 8px 0 4px;
+}
+
+.helado p {
+    font-size: 12px;
+    color: #6f5962;
+    margin: 4px 0;
+}
+
+.helado h4 {
+    color: #f5365b;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* ESTADOS */
+.disponible {
+    color: #27865a;
+    font-weight: bold;
+}
+
+.agotado {
+    color: #d93652;
+    font-weight: bold;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #fff0f2;
+    text-align: center;
+    padding: 22px 10px;
+    margin-top: 14px;
+    font-size: 13px;
+    color: #6f5962;
+}
+
+footer h2 {
+    color: #f5365b;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.final {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .helado {
+        width: 46%;
+        min-width: 135px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 6px;
+    }
+}
